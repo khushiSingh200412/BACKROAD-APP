@@ -1,20 +1,16 @@
 import React from 'react'
 import aboutImg from '../assets/images/about.jpeg'
+import Heading from './Heading';
 
 const About = () => {
   return (
     <section class="section" id="about">
-      <div class="section-title">
-        <h2>about <span>us</span></h2>
-      </div>
+     
+      <Heading fw="about " lw="us" />
 
       <div class="section-center about-center">
         <div class="about-img">
-          <img
-            src={aboutImg}
-            class="about-photo"
-            alt="awesome beach"
-          />
+          <img src={aboutImg} class="about-photo" alt="awesome beach" />
         </div>
         <article class="about-info">
           <h3>explore the difference</h3>
@@ -28,11 +24,13 @@ const About = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="#" class="btn">read more</a>
+          <a href="#" class="btn">
+            read more
+          </a>
         </article>
       </div>
     </section>
-  )
+  );
 }
 
 export default About
